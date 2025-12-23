@@ -127,7 +127,7 @@ and self-contained inference.
 > [!IMPORTANT]
 >
 > Model **XGBoost** is required.  
->  to install::
+>  to install:
 >
 > ```bash
 >  pip install xgboost
