@@ -1,0 +1,15 @@
+{
+  "target": "weather_type",
+  "features": [
+    "PRCP",
+    "PRCP_roll_3",
+    "PRCP_roll_7",
+    "SNOW",
+    "AWND",
+    "month",
+    "dayofyear",
+    "TAVG"
+  ],
+  "model": "XGBoostClassifier",
+  "notes": "WT-codes excluded to prevent information leakage"
+}

@@ -1,0 +1,13 @@
+{
+  "target": "TMAX",
+  "features": [
+       "TMIN",
+    "PRCP",
+    "SNOW",
+    "AWND",
+    "TMAX_lag_1",
+    "TMAX_roll_7",
+    "dayofyear",
+    "month"
+  ]
+}
