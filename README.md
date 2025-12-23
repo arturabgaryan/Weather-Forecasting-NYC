@@ -12,47 +12,22 @@ weather conditions in New York City using historical data from JFK Airport.
 
 ---
 
-##  Project Structure
-Eurail/
-├── data/
-│ ├── raw/
-│ │  └── JFK_Airport_Weather_Data.csv
-│ └── processed/
-│    ├── classification_data.csv
-│    ├── data_with_month&daily_avg.csv
-│    └── regression_data.csv
-│
-├── notebooks/
-│ ├── analysis.ipynb
-│ ├── training_regression.ipynb
-│ └── training_classification.ipynb
-│
-├── preprocess/
-│ ├── init.py
-│ ├── data_prep.py
-│ ├── feature_engineering.py
-│ └── labels.py
-│
-├── models/
-│ ├── regression.py
-│ ├── classification.py
-│ ├── metrics.py
-│ ├── inference/
-│ │  ├── init.py
-│ │  └── predict.py
-│ └── artifacts/
-│    ├── models/
-│    ├── encoders/
-│    ├── params/
-│    ├── metrics/
-│    └── metadata/
-│
-└── README.md
+##  Data(data)
+### `regression_data.csv`
+- features selected for regression
 
+### `classification_data.csv`
+- features selected for classification
 
----
+### `data_with_month&daily_avg.csv`
+- data with monthly and daily average
 
 ##  Notebooks
+### `preprocessing.ipynb`
+- initial data inspection
+- missing value analysis
+- validation of raw measurements
+- application of reusable preprocessing functions
 
 ### `analysis.ipynb`
 Exploratory data analysis:
@@ -73,6 +48,12 @@ Exploratory data analysis:
 - evaluates accuracy and macro-averaged metrics
 - analyzes class imbalance and confusion matrix
 - saves model, label encoder, and configuration
+
+### `report.ipynb`
+- summary of modeling results
+- comparison of baseline and final models
+- interpretation of errors and limitations
+- final conclusions
 
 ---
 
@@ -138,6 +119,7 @@ This module represents a real-world deployment entry point.
 - `encoders/` — label encoders for classification
 - `metrics/` — stored evaluation results
 - `metadata/` — feature lists and model configuration files
+- `parameters/` — parameters of regression model
 
 Artifacts are stored alongside the model code to ensure reproducibility
 and self-contained inference.
