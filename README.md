@@ -123,3 +123,12 @@ This module represents a real-world deployment entry point.
 
 Artifacts are stored alongside the model code to ensure reproducibility
 and self-contained inference.
+
+> [!IMPORTANT]
+>
+> Model **XGBoost** is required.  
+>  to install::
+>
+> ```bash
+>  pip install xgboost
+>  ```
